@@ -8,48 +8,62 @@
 </head>
 <body>
     <header>
-    <h1>Dream Homes</h1>
+        <h1>Dream Homes</h1>
     </header>
+
     <nav>
-        <ul>
+        <!-- 🔥 ADDED HAMBURGER BUTTON -->
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <ul id="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="listings.html">Listings</a></li>
             <li><a href="properties.html">Properties</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
+
+    <!-- ⭐ YOUR ORIGINAL CODE BELOW (UNCHANGED) -->
     <main>
         <section class="hero">
-        <h2>Find Your Perfect Home</h2>
-        <p>The best place to find the property of your dreams.</p>
+            <h2>Find Your Perfect Home</h2>
+            <p>The best place to find the property of your dreams.</p>
         </section>
 
         <div class="container">
             <h2>Welcome to Dream Homes</h2>
             <p>We are your number one source for finding luxury homes, cozy apartments, and beautiful plots of land. Our expert agents are here to help you every step of the way.</p>
             <h3>Featured Properties</h3>
+
             <div class="listings-grid">
                 <div class="property-card">
-                
-                <div class="property-card-content">
-                <h3>Luxury Beachfront Villa</h3>
-                <p class="price">$2,500,000</p>
-                <p>A stunning 5-bedroom villa with ocean views.</p>
-                </div>
-                </div>
-                <div class="property-card">
-                    
                     <div class="property-card-content">
-                    <h3>Modern Downtown Loft</h3>
-                    <p class="price">$850,000</p>
-                    <p>A 2-bedroom industrial loft in the city center.</p>
+                        <h3>Luxury Beachfront Villa</h3>
+                        <p class="price">$2,500,000</p>
+                        <p>A stunning 5-bedroom villa with ocean views.</p>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-card-content">
+                        <h3>Modern Downtown Loft</h3>
+                        <p class="price">$850,000</p>
+                        <p>A 2-bedroom industrial loft in the city center.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
     <footer>
-        <p>2025 Dream Homes - Your College Project</p>
+        <p>&copy; 2025 Dream Homes - My College Project</p>
     </footer>
+
+    <!-- 🔥 ADD THIS JAVASCRIPT BEFORE </body> -->
+    <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("show");
+    });
+    </script>
 </body>
 </html>
