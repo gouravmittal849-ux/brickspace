@@ -8,56 +8,65 @@
 </head>
 <body>
 
-    <header>
-        <h1>Dream Homes</h1>
-    </header>
+<header>
+    <h1>Dream Homes</h1>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="listings.html" class="active">Listings</a></li>
-            <li><a href="properties.html">Properties</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+<nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
-    <main>
-        <div class="container">
-            <h2>For Sale Listings</h2>
-            <p>Browse our current selection of properties for sale.</p>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html" class="active">Listings</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
 
-            <div class="listings-grid">
-                <div class="property-card">
-                    
-                    <div class="property-card-content">
+<!-- ⭐ your original content remains unchanged -->
+
+<main>
+    <div class="container">
+        <h2>For Sale Listings</h2>
+        <p>Browse our current selection of properties for sale.</p>
+
+        <div class="listings-grid">
+            <div class="property-card">
+                <div class="property-card-content">
                     <h3>Charming Suburban Home</h3>
                     <p class="price">$450,000</p>
                     <p>3 Bed, 2 Bath, perfect for a family.</p>
-                    </div>
                 </div>
-                <div class="property-card">
-                    
-                    <div class="property-card-content">
-                        <h3>High-Rise City Condo</h3>
-                        <p class="price">$620,000</p>
-                        <p>2 Bed, 2 Bath with stunning city views.</p>
-                    </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-card-content">
+                    <h3>High-Rise City Condo</h3>
+                    <p class="price">$620,000</p>
+                    <p>2 Bed, 2 Bath with stunning city views.</p>
                 </div>
-                <div class="property-card">
-                    
-                    <div class="property-card-content">
-                        <h3>Sprawling Country Estate</h3>
-                        <p class="price">$1,200,000</p>
-                        <p>6 Bed, 4 Bath on 10 acres of land.</p>
-                    </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-card-content">
+                    <h3>Sprawling Country Estate</h3>
+                    <p class="price">$1,200,000</p>
+                    <p>6 Bed, 4 Bath on 10 acres of land.</p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        <p>&copy; 2025 Dream Homes - Your College Project</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Dream Homes - My College Project</p>
+</footer>
+
+<script>
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("nav-links").classList.toggle("show");
+});
+</script>
 
 </body>
 </html>
