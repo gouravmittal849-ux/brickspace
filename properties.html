@@ -8,48 +8,57 @@
 </head>
 <body>
 
-    <header>
-        <h1>Dream Homes</h1>
-    </header>
+<header>
+    <h1>Dream Homes</h1>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="listings.html">Listings</a></li>
-            <li><a href="properties.html" class="active">Properties</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+<nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
-    <main>
-        <div class="container">
-            <h2>For Rent Properties</h2>
-            <p>Find the perfect rental property for your needs.</p>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="properties.html" class="active">Properties</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
 
-            <div class="listings-grid">
-                <div class="property-card">
-                    
-                    <div class="property-card-content">
-                        <h3>Cozy Studio Apartment</h3>
-                        <p class="price">$1,500 / month</p>
-                        <p>All utilities included, great location.</p>
-                    </div>
+<!-- ⭐ original content untouched -->
+
+<main>
+    <div class="container">
+        <h2>For Rent Properties</h2>
+        <p>Find the perfect rental property for your needs.</p>
+
+        <div class="listings-grid">
+            <div class="property-card">
+                <div class="property-card-content">
+                    <h3>Cozy Studio Apartment</h3>
+                    <p class="price">$1,500 / month</p>
+                    <p>All utilities included, great location.</p>
                 </div>
-                <div class="property-card">
-                    
-                    <div class="property-card-content">
-                        <h3>2-Bedroom Townhouse</h3>
-                        <p class="price">$2,200 / month</p>
-                        <p>Includes a small backyard and garage.</p>
-                    </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-card-content">
+                    <h3>2-Bedroom Townhouse</h3>
+                    <p class="price">$2,200 / month</p>
+                    <p>Includes a small backyard and garage.</p>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        <p>&copy; 2025 Dream Homes - Your College Project</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 Dream Homes - My College Project</p>
+</footer>
+
+<script>
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    document.getElementById("nav-links").classList.toggle("show");
+});
+</script>
 
 </body>
 </html>
